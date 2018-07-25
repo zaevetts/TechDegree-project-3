@@ -25,7 +25,7 @@ h1 {
     text-transform: capitalize;
 }
 
-h2, legend {
+h2 {
     font-family: 'Oswald', sans-serif;
     letter-spacing: .5px;
     color: #d70230;
@@ -45,28 +45,33 @@ p {
     font-family: 'Oswald', sans-serif;
     letter-spacing: .25px;
     color: #1f356e;
-    border-bottom: solid 5px #1f356e;
+    border-bottom: solid 2px #1f356e;
+}
+
+.divider {
+    width: 90%;
+    margin: 5px auto 0;
+    border-bottom: dotted 2px #1f356e;
 }
 
 .contact, .newsletter{
     display: flex;
     flex-direction: column;
     width: 90%;
-    margin: 0 auto 35px;
+    margin: 25px auto 35px;
+    padding: 20px;
     border: none;
-}
-
-fieldset {
-    padding: 0;
+    background-color: whitesmoke;
 }
 
 legend {
-    width: 100%;
+    font-family: 'Oswald', sans-serif;
     font-size: 20px;
-    margin: 0px auto 15px;
-    padding-top: 35px;
+    letter-spacing: .5px;
+    color: #f9dc5c;
+    background-color: #d70230;
     text-align: left;
-    border-top: dashed 2px #1f356e;
+    padding: 10px;
 }
 
 .contact label, .contact input, .contact select {
@@ -79,7 +84,7 @@ legend {
 input::placeholder {
     text-align: right;
     padding-right: 15px;
-    color: rgb(31, 53, 110, .5);
+    color: rgba(31, 53, 110, .5);
 }
 
 #zip {
@@ -91,10 +96,11 @@ input::placeholder {
     background: #f9dc5c;
     font-size: 16px;
     border: none;
+    transition: all .5s;
 }
 
 .contact input:focus {
-    border: solid #000 2px;
+    background: #f9c35c;
 }
 
 .contact select {
@@ -159,9 +165,31 @@ footer p {
     
 .wrapper {
     margin: 0 auto;
-    max-width: 768px;    
+    max-width: 768px;
+    text-align: center;
 }
     
+fieldset {
+    padding: 20px;
+}
     
+.contact, .newsletter {
+    display: inline;
+    text-align: left;
+    margin: 25px auto 35px;
+}
+    
+.contact label {
+    display: inline-block;
+    width: 25%;
+}
+    
+.contact input, .contact select {
+    width: 70%;    
+} 
+    
+#zip {
+    width: 33%;    
+}
 
 }
