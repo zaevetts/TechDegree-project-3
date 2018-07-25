@@ -2,7 +2,7 @@
 <html lang="en">
 <head>
   <meta charset="utf-8">
-  <title>Zach Evetts</title>
+  <title>The Code Review</title>
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link rel="stylesheet" href="css/main.css">
   <link href="https://fonts.googleapis.com/css?family=Bungee|Oswald:400,700" rel="stylesheet">
@@ -15,8 +15,10 @@
  
     <h2>Sign up for our newsletter</h2>
       <p>Get the latest news on how your code is doing right in your inbox</p>
+        
+    <div class="divider"></div>
       
-    <form action="" method="get">
+    <form action="random.php" method="get">
         
         <fieldset class="contact">
         
@@ -29,7 +31,7 @@
         <input type="email" name="email" id="email" placeholder="Required" required>
         
         <label for="phone">Phone Number</label>
-        <input type="tel" name="phone" id="phone">
+        <input type="tel" name="phone" id="phone" placeholder="Home or cell phone">
         
         <label for="address">Street Address</label>
         <input type="text" name="address" id="address">
@@ -40,6 +42,10 @@
         <label for="state">State</label>
         <select id="state">
             <option value="texas">Texas</option>
+            <option value="louisiana">Louisiana</option>
+            <option value="arkansas">Arkansas</option>
+            <option value="oklahoma">Oklahoma</option>
+            <option value="colorado">Colorado</option>
             <option value="none" selected>Choose state</option>
         </select>
         
@@ -47,6 +53,8 @@
         <input type="text" name="zip" id="zip">
             
         </fieldset>
+        
+        <div class="divider"></div>
         
         <fieldset class="newsletter">
             
@@ -74,13 +82,13 @@
         <p class="format">Newsletter format</p>
          
         <div class="radio">
-        <input type="radio" id="html" name="html-format"
+        <input type="radio" id="html-format" name="html"
                value="html-format" />
         <label for="html-format">Javascript News</label>
         </div>
             
         <div class="radio">
-        <input type="radio" id="plain" name="plain-format"
+        <input type="radio" id="plain-format" name="plain"
                value="plain-format"/>
         <label for="plain-format">Plain text</label>
         </div>
